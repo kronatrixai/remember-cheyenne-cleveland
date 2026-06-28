@@ -1,3 +1,7 @@
+# One-Folder GitHub Upload Version
+
+All website files are in this single folder. Upload every file in this folder to the root of your GitHub repository. Do not upload nested asset folders.
+
 # Remember by Cheyenne Cleveland — GitHub Pages Upload Instructions
 
 ## 1. Upload this exact folder structure
@@ -6,15 +10,15 @@
 - robots.txt
 - sitemap.xml
 - manifest.webmanifest
-- assets/css/style.css
-- assets/js/script.js
-- assets/images/remember-by-cheyenne-cleveland-book-cover.webp
-- assets/images/remember-by-cheyenne-cleveland-book-cover-square.webp
-- assets/images/remember-by-cheyenne-cleveland-og-image.webp
-- assets/images/favicon-32.png
-- assets/images/favicon-192.png
-- assets/images/favicon-512.png
-- assets/docs/chapter-one-teaser.pdf
+- style.css
+- script.js
+- remember-by-cheyenne-cleveland-book-cover.webp
+- remember-by-cheyenne-cleveland-book-cover-square.webp
+- remember-by-cheyenne-cleveland-og-image.webp
+- favicon-32.png
+- favicon-192.png
+- favicon-512.png
+- chapter-one-teaser.pdf
 
 ## 2. Replace the domain placeholder before launch
 
