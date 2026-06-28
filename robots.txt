@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kronatrixai.github.io/remember-cheyenne-cleveland/sitemap.xml
+Sitemap: https://cheyennecleveland.kronatrix.co.uk/sitemap.xml

@@ -1,14 +1,19 @@
-# One-Folder GitHub Upload Version
+# Remember by Cheyenne Cleveland — GitHub Pages Upload Package
 
-All website files are in this single folder. Upload every file in this folder to the root of your GitHub repository. Do not upload nested asset folders.
+All website files are in this single folder. Upload every file in this folder to the root of the GitHub repository. Do not upload nested asset folders.
 
-# Remember by Cheyenne Cleveland — GitHub Pages Upload Instructions
+## Final live domain
 
-## 1. Upload this exact folder structure
+https://cheyennecleveland.kronatrix.co.uk/
+
+## Upload these files
 
 - index.html
+- CNAME
+- .nojekyll
 - robots.txt
 - sitemap.xml
+- llms.txt
 - manifest.webmanifest
 - style.css
 - script.js
@@ -20,46 +25,28 @@ All website files are in this single folder. Upload every file in this folder to
 - favicon-512.png
 - chapter-one-teaser.pdf
 
-## 2. Replace the domain placeholder before launch
+## What was upgraded
 
-Search all files for:
+- Custom domain is now set across canonical, Open Graph, Twitter card, schema, sitemap, robots, and manifest.
+- CNAME file is included for GitHub Pages: `cheyennecleveland.kronatrix.co.uk`.
+- Review JSON-LD has been removed to fix the Google Search Console Review Snippet issue about multiple reviews without aggregateRating.
+- Visual review cards remain on the page, but they are not marked up as structured Review objects.
+- Book, WebSite, WebPage, Person, FAQPage, BreadcrumbList, and Organization JSON-LD remain for Google and AI understanding.
+- Added llms.txt for AI crawlers and assistant-style answer extraction.
 
-https://kronatrixai.github.io/remember-cheyenne-cleveland/
+## After upload
 
-Replace it with the final live website URL.
+1. Wait for GitHub Pages to redeploy.
+2. Confirm the live URL opens: https://cheyennecleveland.kronatrix.co.uk/
+3. In Google Search Console, submit: https://cheyennecleveland.kronatrix.co.uk/sitemap.xml
+4. Inspect the homepage URL.
+5. Click Request Indexing.
+6. Open the Review Snippets issue and click Validate Fix.
+7. Test the page in Google Rich Results Test and Schema Validator.
 
-Files to update:
-- index.html
-- robots.txt
-- sitemap.xml
+## MailerLite note
 
-## 3. MailerLite note
-
-The original first MailerLite link ended in `sharev`, so this website uses:
+The website uses this MailerLite link:
 https://dashboard.mailerlite.com/forms/1358350/150614043386710009/share
 
-Test all MailerLite links before final launch.
-
-## 4. GitHub Pages deployment
-
-1. Create a new GitHub repository.
-2. Upload all files and folders exactly as provided.
-3. Go to Settings → Pages.
-4. Under Build and deployment, choose Deploy from branch.
-5. Select main branch and root folder.
-6. Save.
-7. Wait for GitHub to publish the site.
-8. Test the live URL on mobile and desktop.
-
-## 5. Final launch checklist
-
-- Replace kronatrixai.github.io/remember-cheyenne-cleveland in HTML, sitemap and robots.
-- Test every buy link.
-- Test Goodreads link.
-- Test Chapter One PDF link.
-- Test MailerLite signup link.
-- Check mobile menu.
-- Check all images load.
-- Check social preview with the OG image.
-- Submit sitemap in Google Search Console.
-- Submit sitemap in Bing Webmaster Tools.
+Test the signup form before final launch.
