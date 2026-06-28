@@ -24,7 +24,7 @@ All website files are in this single folder. Upload every file in this folder to
 
 Search all files for:
 
-https://YOUR-DOMAIN-HERE/
+https://kronatrixai.github.io/remember-cheyenne-cleveland/
 
 Replace it with the final live website URL.
 
@@ -53,7 +53,7 @@ Test all MailerLite links before final launch.
 
 ## 5. Final launch checklist
 
-- Replace YOUR-DOMAIN-HERE in HTML, sitemap and robots.
+- Replace kronatrixai.github.io/remember-cheyenne-cleveland in HTML, sitemap and robots.
 - Test every buy link.
 - Test Goodreads link.
 - Test Chapter One PDF link.

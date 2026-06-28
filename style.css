@@ -847,3 +847,105 @@ dd { margin: 0; color: var(--white); }
   .review-source { font-size: .64rem; }
   .review-note { text-align: left; }
 }
+
+
+/* First-screen hero polish: keeps title, CTAs and cover visible on desktop/laptop screens. */
+@media (min-width: 981px) {
+  .hero {
+    min-height: 100svh;
+    padding: clamp(4.7rem, 7.2vh, 5.8rem) 0 clamp(1rem, 2.2vh, 1.8rem);
+  }
+  .hero-bg {
+    background:
+      linear-gradient(90deg, rgba(2,6,5,0.985) 0%, rgba(2,6,5,0.92) 30%, rgba(2,6,5,0.64) 58%, rgba(2,6,5,0.86) 100%),
+      radial-gradient(circle at 24% 55%, rgba(2,6,5,0.7), transparent 34rem),
+      url('remember-by-cheyenne-cleveland-book-cover.webp') center/cover no-repeat;
+    opacity: 0.52;
+    transform: scale(1.02);
+  }
+  .hero-grid {
+    grid-template-columns: minmax(0, 1.08fr) minmax(240px, 0.48fr);
+    min-height: calc(100svh - 7rem);
+    gap: clamp(1.2rem, 3vw, 3rem);
+    align-items: center;
+  }
+  .hero-copy {
+    max-width: 760px;
+    padding-block: .4rem;
+  }
+  .hero-copy .eyebrow {
+    margin-bottom: .72rem;
+  }
+  h1 {
+    max-width: 700px;
+    font-size: clamp(3rem, 7vw, 6.45rem);
+  }
+  h1 small {
+    margin-top: .38rem;
+    font-size: clamp(.95rem, 1.55vw, 1.35rem);
+    letter-spacing: .32em;
+  }
+  .tagline {
+    margin-top: .95rem;
+    font-size: clamp(1rem, 1.7vw, 1.35rem);
+  }
+  .hero-lede {
+    margin-top: .9rem;
+    max-width: 620px;
+    font-size: clamp(.98rem, 1.25vw, 1.08rem);
+    line-height: 1.68;
+  }
+  .hero-actions {
+    margin-top: 1.35rem;
+  }
+  .comparison {
+    margin-top: 1.05rem;
+    max-width: 620px;
+    font-size: .9rem;
+    line-height: 1.55;
+  }
+  .cover-stage {
+    width: min(28vw, 340px);
+    align-self: center;
+  }
+  .cover-stage img {
+    max-height: min(62svh, 505px);
+    width: auto;
+    margin-inline: auto;
+  }
+  .cover-aura {
+    inset: 4% -14% -8%;
+  }
+  .cover-badge {
+    display: none;
+  }
+}
+
+@media (min-width: 981px) and (max-height: 760px) {
+  .nav { min-height: 72px; }
+  .brand-mark { width: 40px; height: 40px; }
+  .hero { padding-top: 4.4rem; padding-bottom: .9rem; }
+  .hero-grid { min-height: calc(100svh - 5.8rem); }
+  h1 { font-size: clamp(2.8rem, 6.5vw, 5.9rem); }
+  .tagline { font-size: clamp(.98rem, 1.55vw, 1.22rem); }
+  .hero-lede { font-size: .98rem; line-height: 1.58; }
+  .btn { min-height: 48px; padding: .78rem 1.1rem; }
+  .cover-stage { width: min(25vw, 315px); }
+  .cover-stage img { max-height: min(60svh, 460px); }
+}
+
+@media (max-width: 980px) {
+  .cover-badge { display: none; }
+  .hero-bg {
+    background:
+      linear-gradient(180deg, rgba(2,6,5,.92) 0%, rgba(2,6,5,.72) 50%, rgba(2,6,5,.95) 100%),
+      url('remember-by-cheyenne-cleveland-book-cover.webp') center/cover no-repeat;
+    opacity: .5;
+  }
+}
+
+@media (max-width: 620px) {
+  .hero-copy .eyebrow { margin-bottom: .45rem; }
+  .hero-actions { margin-top: .9rem; }
+  .comparison { display: none; }
+}

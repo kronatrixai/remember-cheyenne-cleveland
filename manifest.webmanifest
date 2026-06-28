@@ -2,7 +2,7 @@
   "name": "Remember by Cheyenne Cleveland",
   "short_name": "Remember",
   "description": "Official promotional website for Remember by Cheyenne Cleveland.",
-  "start_url": "/",
+  "start_url": "/remember-cheyenne-cleveland/",
   "display": "standalone",
   "background_color": "#020605",
   "theme_color": "#08251d",
